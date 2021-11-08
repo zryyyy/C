@@ -29,13 +29,13 @@ int main()
         j = j + 1;
     }
     for (int k = 0; k < j; ++k) {
-            for (int l = 0; l < i; ++l) {
-                if (a[k] == b[l]) {
-                    c[n] = a[k];
-                    n = n + 1;
-                    break;
-                }
+        for (int l = 0; l < i; ++l) {
+            if (a[k] == b[l]) {
+                c[n] = a[k];
+                n = n + 1;
+                break;
             }
+        }
     }
     for (int k = 0; k < n - 1; ++k) {
         for (int l = 0; l < n - 1 - k; ++l) {
