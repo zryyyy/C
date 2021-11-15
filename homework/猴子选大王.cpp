@@ -1,10 +1,6 @@
 //
-// Created by Matrix on 2021/10/6.
+// Created by Matrix on 2021/11/15.
 //
-using namespace std;
-#include <cstdio>
-#include <math.h>
-#include <iostream>
 #include <stdio.h>
 int king(int n, int m, int q)
 {
