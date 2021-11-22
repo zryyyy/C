@@ -14,7 +14,7 @@ int main()
     printf("%d,",number);
     t = number;
     int a[10],n=0,fac=0;
-    while(number > 0)                 //a>0是执行循环，当等于0是结束循环
+    while(number > 0)                 //number>0是执行循环，当等于0是结束循环
     {
         a[n] = number % 10;
         n++;

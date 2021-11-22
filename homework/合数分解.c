@@ -1,10 +1,7 @@
 //
-// Created by Matrix on 2021/10/6.
+// Created by Matrix on 2021/11/22.
 //
-using namespace std;
-#include <cstdio>
 #include <math.h>
-#include <iostream>
 #include <stdio.h>
 int prime(int n) {
     if (n % 2 == 0) return 0;

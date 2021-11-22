@@ -4,7 +4,7 @@
 #include <stdio.h>
 int main()
 {
-    int n,m,i,j,flag;
+    int n,m,flag;
     scanf("%d%d",&n,&m);
     int a[n][m];
     for (i = 0; i < n; i++) {
