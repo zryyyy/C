@@ -1,11 +1,6 @@
 //
-// Created by Matrix on 2021/10/6.
+// Created by Matrix on 2021/11/29.
 //
-using namespace std;
-#include <string.h>
-#include <cstdio>
-#include <math.h>
-#include <iostream>
 #include <stdio.h>
 int main()
 {
@@ -33,11 +28,5 @@ int main()
         }
         printf("\n");
     }
-    /*for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) {
-            printf("%4d ",a[i][j]);
-        }
-        printf("\n");
-    }*/
     return 0;
 }
