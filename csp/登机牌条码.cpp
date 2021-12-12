@@ -1,11 +1,8 @@
 //
-// Created by Matrix on 2021/10/6.
-//
-//using namespace std;
+// Created by Matrix on 2021/12/8.
+// 这个文件现在只写到了校验码之前，校验码之后的内容暂时还没有思路
 #include <string.h>
-//#include <cstdio>
 #include <math.h>
-//#include <iostream>
 #include <stdio.h>
 int judge(char x) {
     if (x>96 && x<123) return 1;
@@ -67,6 +64,5 @@ int main()
         printf("%d\n",e[i]);
     }
     int n = e[0];//r(x) = q(x) * g(x) - x^k * d(x)
-
     return 0;
 }
