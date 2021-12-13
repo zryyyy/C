@@ -1,8 +1,6 @@
 //
 // Created by Matrix on 2021/12/4.
-//
-
-//下面是原来超时的程序(1.046s)
+// 50(运行超时1.046s)
 #include <stdio.h>
 int main()
 {

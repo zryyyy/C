@@ -1,11 +1,6 @@
 //
-// Created by Matrix on 2021/10/6.
-//
-using namespace std;
-#include <string.h>
-#include <cstdio>
-#include <math.h>
-#include <iostream>
+// Created by Matrix on 2021/12/12.
+// 70(运行超时)
 #include <stdio.h>
 int main()
 {
