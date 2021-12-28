@@ -1,18 +1,7 @@
 //
-// Created by Matrix on 2021/10/6.
-//
-using namespace std;
-#include <string.h>
-#include <cstdio>
-#include <math.h>
-#include <iostream>
+// Created by Matrix on 2021/12/28.
+// 因为直接一维数组直接能做了，就没有用链表
 #include <stdio.h>
-//struct student {
-//    char id[10];
-//    char name[10];
-//    int score[3] = {0};
-//    int sum = 0;
-//};
 int main()
 {
     int n,m;
