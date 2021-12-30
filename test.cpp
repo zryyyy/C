@@ -7,24 +7,21 @@ using namespace std;
 #include <math.h>
 #include <iostream>
 #include <stdio.h>
-//struct student {
-//    char id[10];
-//    char name[10];
-//    int score[3] = {0};
-//    int sum = 0;
-//};
+int removeDuplicates(int* nums, int numsSize){
+    int i = 0,len = numsSize,next = 1;
+    if (len == 0) return 0;
+    while (i < len && i + next < numsSize) {
+        if (nums[i] == nums[i + next]) ++next,--len;
+        else ++i,nums[i] = nums[i + next - 1];
+    }
+    return i + 1;
+}
 int main()
 {
-    int n,m;
-    scanf("%d%d",&n,&m);
-    int a[200] = {0};
-    for (int i = 0; i < n + m; ++i) {
-        int x,y;
-        scanf("%d%d",&x,&y);
-        a[x] = y;
-    }
-    for (int i = 0; i < 200; ++i) {
-        if (a[i] != 0) printf("%d %d\n",i,a[i]);
+    int nums[] = {0,0,1,1,1,2,2,3,3,4};
+    int len = removeDuplicates(nums,10);
+    for (int i = 0; i < len; ++i) {
+        printf("%d ",nums[i]);
     }
     return 0;
 }

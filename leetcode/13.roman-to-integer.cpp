@@ -24,7 +24,7 @@ int romanToInt(char * s){
         int x = 1;
         while (s[i] == s[i + x]) ++x;
         int value = num[s[i]] * x;
-        if (num[s[i]] < num[s[i + x]]) value = -value; //若右侧数字更大则取反
+        if (num[s[i]] < num[s[i + x]]) value = -value; // 若右侧数字更大则取反
         sum += value;
         i += x;
     }

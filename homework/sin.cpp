@@ -1,7 +1,6 @@
 //
 // Created by Matrix on 2021/11/1.
 //
-#include <iostream>
 #include <stdio.h>
 #include <math.h>
 double fact(int a) {

@@ -14,11 +14,11 @@ int main()
     printf("%d,",number);
     t = number;
     int a[10],n=0,fac=0;
-    while(number > 0)                 //number>0是执行循环，当等于0是结束循环
+    while(number > 0)         // number > 0 时执行循环 , number = 0 时结束循环
     {
         a[n] = number % 10;
-        n++;
-        number = number / 10;            //每次处以10，少了一位，n自增一个数
+        ++n; // n指向下一个存储位数的位置
+        number = number / 10; // number在每次除以10后去除最后一位
     }
     n -= 1;
     for (int i = n; i > 0; --i) {

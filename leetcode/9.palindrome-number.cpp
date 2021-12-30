@@ -4,7 +4,7 @@
 bool isPalindrome(int x){
     int a[40];
     int n = 0;
-    if (x < 0) return false; //负数都不是回文数
+    if (x < 0) return false; // 负数都不是回文数
     while (x != 0) {
         a[n++] = x % 10;
         x /= 10;

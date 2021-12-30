@@ -21,10 +21,10 @@ int main()
     for (int i = 0; i < x; ++i) {
         int sum = 0;
         int prev = 0;
-        if (a[0] >= c[i]) sum = 1,prev = 1; //c[i]表示选取的数字
+        if (a[0] >= c[i]) sum = 1,prev = 1; // c[i]表示选取的数字
         for (int j = 1; j < n; ++j) {
-            if (prev == 1 && a[j] < c[i]) prev = 0; //非零段的结尾数字
-            if (prev == 0 && a[j] >= c[i]) ++sum,prev = 1; //非零段的开头数字
+            if (prev == 1 && a[j] < c[i]) prev = 0; // 非零段的结尾数字
+            if (prev == 0 && a[j] >= c[i]) ++sum,prev = 1; // 非零段的开头数字
         }
         if (sum > max) max = sum;
     }
@@ -33,18 +33,18 @@ int main()
 }
 
 
-//这是一段写不下去的代码
+// 这是一段写不下去的代码
 /*
 #include <stdio.h>
 int main()
 {
     int n;
     scanf("%d",&n);
-    int a[n]; //a数组保存输入数据
-    int b[n]; //b数组保存改变量
-    int c[10001] = {0}; //c数组保存在取该下标时出现的非零段
-    int length = 1; //记录b的长度
-    //读入a数组并且把单调的情况去除后存入b数组
+    int a[n]; // a数组保存输入数据
+    int b[n]; // b数组保存改变量
+    int c[10001] = {0}; // c数组保存在取该下标时出现的非零段
+    int length = 1; // 记录b的长度
+    // 读入a数组并且把单调的情况去除后存入b数组
     scanf("%d",&a[0]);
     b[0] = 0;
     for (int i = 1; i < n; ++i) {
@@ -53,12 +53,12 @@ int main()
         if ((b[length] > 0 && b[length - 1] > 0) || (b[length] < 0 && b[length - 1] < 0) || b[length] == 0) b[length - 1] += b[length];
         else ++length;
     }
-//    //测试输出
+//    // 测试输出
 //    for (int i = 0; i < length; ++i) {
 //        printf("%d ",b[i]);
 //    }
     printf("\n");
-    int x = a[0]; //x复现数组a中的值
+    int x = a[0]; // x复现数组a中的值
     for (int i = 0; i < length; ++i) {
         if (b[i] > 0) {
             for (int j = 0; j <= b[i]; ++j) c[x + j] += 1;
@@ -69,7 +69,7 @@ int main()
             x += b[i];
         }
     }
-//    //测试输出
+//    // 测试输出
 //    for (int i = 0; i < 13; ++i) {
 //        printf("%d ",c[i]);
 //    }

@@ -64,6 +64,6 @@ int main()
     for (int i = 0;i < sum;++i) {
         printf("%d\n",e[i]);
     }
-    int n = e[0];//r(x) = q(x) * g(x) - x^k * d(x)
+    int n = e[0]; // r(x) = q(x) * g(x) - x^k * d(x)
     return 0;
 }

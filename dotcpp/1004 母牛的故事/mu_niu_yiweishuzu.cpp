@@ -4,7 +4,7 @@
 #include <stdio.h>
 int main()
 {
-    int n,a[4];  // a[0]成年母牛，a[1]
+    int n,a[4];  // a[0]成年母牛，a[1] a[2] a[3] 都是将要成年的牛
     a[0]=1,a[1]=0,a[2]=0,a[3]=0;
     while(scanf("%d", &n),n) {
         a[0]=1,a[1]=0,a[2]=0,a[3]=0;
