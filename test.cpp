@@ -7,21 +7,17 @@ using namespace std;
 #include <math.h>
 #include <iostream>
 #include <stdio.h>
-int removeDuplicates(int* nums, int numsSize){
-    int i = 0,len = numsSize,next = 1;
-    if (len == 0) return 0;
-    while (i < len && i + next < numsSize) {
-        if (nums[i] == nums[i + next]) ++next,--len;
-        else ++i,nums[i] = nums[i + next - 1];
+char * addBinary(char * a, char * b){
+    int len_a = strlen(a),len_b = strlen(b);
+    int len = (len_a > len_b) ? len_a : len_b;
+    char * ret = malloc(sizeof(char) * (len + 1));
+    for (int i = 1; i < len; ++i) {
+        if (a[len_a - i] == '1' && b[len_b - i] == '1') ret[]
     }
-    return i + 1;
 }
 int main()
 {
-    int nums[] = {0,0,1,1,1,2,2,3,3,4};
-    int len = removeDuplicates(nums,10);
-    for (int i = 0; i < len; ++i) {
-        printf("%d ",nums[i]);
-    }
+    char a[] = "11",b[] = "1";
+    printf("%s", addBinary(a,b));
     return 0;
 }
