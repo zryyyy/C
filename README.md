@@ -1,2 +1,2 @@
 # C
-学习C/C++写的代码
+![C](https://socialify.git.ci/zryyyy/C/image?description=1&language=1&name=1&owner=1&stargazers=1&theme=Light)
