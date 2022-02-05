@@ -17,7 +17,7 @@ int mySqrt(int x){
 }
 
 /**
- * 下面是在编译器调试的参考代码
+ * 下面是在IDE调试的参考代码
 #include <stdio.h>
 int mySqrt(int x){
     if (x == 0) return 0;

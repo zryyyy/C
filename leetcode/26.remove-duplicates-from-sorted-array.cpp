@@ -14,7 +14,7 @@ int removeDuplicates(int* nums, int numsSize){
 }
 
 /**
- * 下面是在编译器调试的参考代码
+ * 下面是在IDE调试的参考代码
 #include <stdio.h>
 int removeDuplicates(int* nums, int numsSize){
     int i = 0,len = numsSize,next = 1;

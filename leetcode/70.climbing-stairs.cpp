@@ -24,7 +24,7 @@ int climbStairs(int n){
 */
 
 /**
- * 下面是在编译器调试的参考代码
+ * 下面是在IDE调试的参考代码
 #include <stdio.h>
 int climbStairs(int n){
     if (n == 1) return 1;

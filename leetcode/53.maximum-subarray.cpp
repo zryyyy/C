@@ -16,7 +16,7 @@ int maxSubArray(int* nums, int numsSize){
 }
 
 /**
- * 下面是在编译器调试的参考代码
+ * 下面是在IDE调试的参考代码
 #include <stdio.h>
 int maxSubArray(int* nums, int numsSize){
     int max = nums[0];
