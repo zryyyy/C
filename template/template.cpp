@@ -6,6 +6,7 @@ using namespace std;
 #include <cstdio>
 int main()
 {
-
+    system("chcp 65001");
+    system("cls");
     return 0;
 }
