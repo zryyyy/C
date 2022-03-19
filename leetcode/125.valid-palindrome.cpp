@@ -2,7 +2,7 @@
 // Created by Matrix on 2022/3/19.
 // 125.验证回文串
 bool isPalindrome(char * s){
-    int left = 0,right = strlen(s) - 1;
+    int left = 0,right = (int)strlen(s) - 1;
     while (left < right) {
         if ((s[left] >= 'A' && s[left] <= 'Z')) s[left] += 32;
         if ((s[right] >= 'A' && s[right] <= 'Z')) s[right] += 32;
@@ -18,8 +18,9 @@ bool isPalindrome(char * s){
  * 下面是在IDE调试的参考代码
 #include <string.h>
 #include <stdio.h>
+#include <stdbool.h>
 bool isPalindrome(char * s){
-    int left = 0,right = strlen(s) - 1;
+    int left = 0,right = (int)strlen(s) - 1;
     while (left < right) {
         if ((s[left] >= 'A' && s[left] <= 'Z')) s[left] += 32;
         if ((s[right] >= 'A' && s[right] <= 'Z')) s[right] += 32;
