@@ -38,7 +38,6 @@ int lengthOfLastWord(char * s){
 /**
  * 下面是在IDE调试的参考代码
 #include <stdio.h>
-//#include <string.h>
 int lengthOfLastWord(char * s){
     int i = 0,sum = 0,last = 0;
     while (s[i] != 0) {
